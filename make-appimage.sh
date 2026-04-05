@@ -19,6 +19,7 @@ quick-sharun \
 	/usr/lib/lightzone \
 	/usr/bin/dcraw_lz  \
 	/usr/bin/java      \
+	/usr/lib/jvm       \
 	/usr/share/java
 
 sed -i -e 's|usrdir=/usr|usrdir=$APPDIR|' ./AppDir/bin/lightzone
