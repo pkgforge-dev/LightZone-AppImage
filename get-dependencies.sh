@@ -16,6 +16,7 @@ get-debloated-pkgs --add-common --prefer-nano
 make-aur-package lightzone
 
 # remove jdk packages
+pacman -R --noconfirm ant
 yes | pacman -S jre-openjdk
 
 # If the application needs to be manually built that has to be done down here
