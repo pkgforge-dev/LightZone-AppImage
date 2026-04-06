@@ -15,12 +15,13 @@ export DEPLOY_COMMON_LIBS=1
 
 # Deploy dependencies
 quick-sharun \
-	/usr/bin/lightzone \
-	/usr/lib/lightzone \
-	/usr/bin/dcraw_lz  \
-	/usr/bin/java      \
-	/usr/share/java    \
-	/usr/lib/jvm/java-26-openjdk
+	/usr/bin/lightzone        \
+	/usr/lib/lightzone        \
+	/usr/bin/dcraw_lz         \
+	/usr/bin/java             \
+	/usr/share/java           \
+	/usr/lib/jvm/java*openjdk \
+	/usr/lib/libnss_mdns*_minimal.so*
 
 sed -i -e 's|usrdir=/usr|usrdir=$APPDIR|' ./AppDir/bin/lightzone
 
